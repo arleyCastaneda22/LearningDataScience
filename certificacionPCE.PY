@@ -18,17 +18,38 @@
 
 #Lista_de_claves
 
-claves_usuario =["Admin1", "Admind2", "Admin3"]
-contador=0;
-contador2=0;
+# claves_usuario =["Admin1", "Admind2", "Admin3"]
+# contador=0;
+# contador2=0;
 
-for n in claves_usuario:
-    ingreso_clave =input("Ingrese la clave: ")
-    if ingreso_clave in n:
-        contador +=1
-        print("No se encuentra la clave")
-        print(f'Errores{contador}')
-    else:
-        contador2 +=1
-        print(f'Aciertos{contador2}')
-        print("puedes pasar")
+# for n in claves_usuario:
+#     ingreso_clave =input("Ingrese la clave: ")
+#     if ingreso_clave in n:
+#         contador +=1
+#         print("No se encuentra la clave")
+#         print(f'Errores{contador}')
+#     else:
+#         contador2 +=1
+#         print(f'Aciertos{contador2}')
+#         print("puedes pasar")
+
+
+
+contraseña ="CICOELMEJOR"
+intentos =0;
+
+while True:
+    ingreso_contraseña =input("Ingrse su contraseña: ");
+    if contraseña == ingreso_contraseña:
+        intentos+=1;
+        print("Bienvenido a Banistmo")
+        break
+    else :
+        print("contraseña incorrecta")
+        intentos +=1
+        if intentos>=3:
+            print("Su cuenta está bloqueda ")
+            break
+
+
+
