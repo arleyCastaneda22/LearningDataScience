@@ -19,9 +19,4 @@ import time
 # driver.quit()
 
 
-driver = webdriver.Chrome()
 
-driver.get("https://bancolombia-smartit.onbmc.com/smartit/app/#/incidentPV/AGGBBHV5ERTFPASZL8L7SZL8L7HN8T")
-time.sleep(5)
-
-driver.quit()
